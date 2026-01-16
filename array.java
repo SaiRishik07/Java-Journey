@@ -1,20 +1,26 @@
-public class array {
-    public static void main (String [] a){
-        int numbers [] = {45 , 22, 89, 16, 90, 33};
-        int smallest = numbers [0];
-         int largest = numbers [0];
-        for (int i=1 ; i < numbers.length ; i++)
-        {
-            if (numbers [i] < smallest ){
-                smallest = numbers [i];
+public class Array {
+    public static void main(String[] args) {
+        int nums [][] = new int[3][4];
+        for(int i=0;i<3;i++){
+            for(int j=0;j<4;j++){
+                 nums[i][j] = (int)(Math.random() * 10);
+              
             }
-            if (numbers [i] > largest ){
-                largest = numbers [i];
-            }
-
+            
         }
-        System.out.println("smallest: "+smallest);
-
-        System.out.println("largest : "+largest);
+      int random = (int)(Math.random() * 100);
+        for(int i=0;i<3;i++){
+            for(int j=0;j<4;j++){
+                System.out.print(nums[i][j] + " ");
+            }
+            System.out.println();
+        }
+        for(int n[]:nums){
+        for(int m:n){
+           System.out.print(m + " ");
+        }
+        System.out.println();
+      } 
     }
+    
 }
