@@ -22,8 +22,8 @@ public class object {
         students[0]= s1;
         students[1]= s2;
         students[2]= s3;
-        for(int i=0;i<students.length;i++){
-            System.out.println(students[i].Name +":"+students[i].roll);
+        for(Student n : students){
+           System.out.println(n.Name+":"+n.roll);
         }
             
         
